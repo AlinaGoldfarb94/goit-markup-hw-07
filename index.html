@@ -208,7 +208,6 @@
           </ul>
         </div>
       </section>
-      -->
       <!-- /Advantages -->
 
       <!-- What are we doing -->
@@ -218,6 +217,7 @@
           <ul class="list we">
             <li class="we-item">
               <img
+                srcset="./images/img1@2x-min.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Desktop applications"
                 width="360"
@@ -225,6 +225,7 @@
             </li>
             <li class="we-item">
               <img
+                srcset="./images/img2@2x-min.jpg"
                 src="./images/img2.jpg"
                 alt="Mobile applications"
                 width="360"
@@ -232,6 +233,7 @@
             </li>
             <li class="we-item">
               <img
+                srcset="./images/img3@2x-min.jpg"
                 src="./images/img3.jpg"
                 alt="Design solutions"
                 width="360"
@@ -249,6 +251,7 @@
           <ul class="list team">
             <li class="team-item">
               <img
+                srcset="./images/photo1@2x-min.jpg"
                 src="./images/photo1.jpg"
                 alt="The man named Mark Guerrero"
                 width="264" />
@@ -294,6 +297,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo2@2x-min.jpg"
                 src="./images/photo2.jpg"
                 alt="The man named Tom Ford"
                 width="264" />
@@ -338,6 +342,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo3@2x-min.jpg"
                 src="./images/photo3.jpg"
                 alt="The woman named Camila Garcia"
                 width="264" />
@@ -382,6 +387,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/photo4@2x-min.jpg"
                 src="./images/photo4.jpg"
                 alt="The man named Daniel Wilson"
                 width="264" />
@@ -527,34 +533,33 @@
           </ul>
         </div>
 
-        <div class="form-footer-wrapper-item">
-          <form class="form-footer">
+        <form class="form-footer">
+          <div class="form-footer-wrapper-item">
             <span class="form-footer-text">Subscribe</span>
-            <!-- <label class="form-footer-box"> -->
-            <input
-              type="email"
-              name="user-email"
-              placeholder="E-mail"
-              class="form-footer-input"
-              aria-label="email" />
-            <!-- </label> -->
-            <button type="submit" class="subscribe-button">Subscribe</button>
-          </form>
-        </div>
+            <label class="form-footer-box">
+              <input
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                class="form-footer-input" />
+            </label>
+          </div>
+          <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
       </div>
     </footer>
 
     <!-- modal-window -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-button-svg" width="8px" height="8px">
             <use href="./images/symbol-defs.svg#icon-close-modal"></use>
           </svg>
-        </button> -->
+        </button>
 
-    <!-- form -->
-    <!-- <p class="form-header">Leave your contacts and we will call you back</p>
+        <!-- form -->
+        <p class="form-header">Leave your contacts and we will call you back</p>
         <form class="form">
           <label class="form-box">
             <span class="form-name">Name</span>
@@ -626,8 +631,8 @@
         </form>
       </div>
     </div>
-  
-    <script src="./js/modal.js"></script> -->
+
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
