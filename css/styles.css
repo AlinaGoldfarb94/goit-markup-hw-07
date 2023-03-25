@@ -599,7 +599,6 @@ body {
   }
 
   .form-footer-input {
-    display: block;
     height: 40px;
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255, 0.3);
@@ -608,8 +607,8 @@ body {
     margin-bottom: 16px;
     padding: 0;
     /* width: 398px; */
-    max-width: 398px;
-    /* width: 100%; */
+    /* max-width: 398px; */
+    width: 100%;
   }
 
   .form-footer-input::placeholder {
@@ -630,9 +629,15 @@ body {
     justify-content: center;
   }
 
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .subscribe-button {
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 165px;
     height: 40px;
     align-self: end;
@@ -662,6 +667,7 @@ body {
   .subscribe-button:focus {
     background-color: var(--accent-text-and-button-color);
   }
+  /* /FOOTER MOBILE */
 }
 
 /* TABLET */
@@ -968,7 +974,7 @@ body {
 
   /* CUSTOMERS TABLET */
   .section-customers {
-    padding: 96px 0 96px 0;
+    padding: 96px 0 96px 0px;
   }
   .section-customers .section-title {
     font-weight: 700;
@@ -1008,6 +1014,132 @@ body {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+  }
+  /* /CUSTOMER TABLET */
+
+  /* FOOTER TABLET */
+  .logowhite {
+    color: var(--secondary-backgroud-color);
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+  }
+
+  .section-footer {
+    background-color: var(--text-color-title);
+    padding: 96px 0 96px 108px;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .footer-text {
+    color: var(--footer-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    width: 264px;
+    margin-top: 16px;
+  }
+
+  .social-media-text {
+    color: var(--text-color-title-hero);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .icon-footer {
+    display: flex;
+    gap: 16px;
+  }
+
+  .icon-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--button-hero-and-logo-blue);
+    /* transition: background-color var(--transition); */
+  }
+
+  .form-footer {
+    /* display: flex; */
+  }
+
+  .form-footer-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+    color: var(--text-color-title-hero);
+  }
+
+  .form-footer-input {
+    display: flex;
+
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-top: 16px;
+  }
+
+  .form-footer-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
+
+  .form-footer-wrapper-item {
+    flex-direction: column;
+    /* max-width: 264px; */
+  }
+
+  .subscribe-button {
+    position: relative;
+    cursor: pointer;
+    width: 165px;
+    height: 40px;
+    align-self: end;
+    margin-left: 24px;
+    background-color: var(--button-hero-and-logo-blue);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--text-color-title-hero);
+    padding-left: 24px;
+    border: none;
+    border-radius: 4px;
+    background-image: url(../images/send.svg);
+    background-repeat: no-repeat;
+    background-position: 117px 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color var(--transition);
+  }
+
+  .subscribe-button:hover,
+  .subscribe-button:focus {
+    background-color: var(--accent-text-and-button-color);
   }
 }
 
@@ -1336,6 +1468,7 @@ body {
     gap: 24px;
     justify-content: center;
   }
+  /* /CUSTOMER DESKTOP */
 }
 
 /* h1,
