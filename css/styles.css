@@ -148,6 +148,11 @@ body {
   }
 
   .mobile-menu-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 100px; */
     position: relative;
     padding-left: 40px;
     padding-right: 35px;
@@ -188,7 +193,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 56px;
+    /* margin-top: 56px; */
     padding: 0;
     text-decoration: none;
   }
@@ -207,7 +212,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 284px;
+
+    /* margin-top: 284px; */
     padding: 0;
   }
 
@@ -493,7 +499,6 @@ body {
     color: #2e2f42;
   }
   .link-customers {
-    margin-top: 72px;
     padding: 16px 40px 16px 40px;
     display: flex;
     justify-content: center;
@@ -519,7 +524,7 @@ body {
   .customer {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 72px 16px;
     justify-content: center;
   }
   /* /CUSTOMERS MOBILE */
@@ -606,7 +611,7 @@ body {
   .form-footer-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color-title-hero);
   }
@@ -634,12 +639,15 @@ body {
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
   }
-
+  .form-footer-box {
+    width: 100%;
+  }
   .form-footer-wrapper-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
   .form-footer {
@@ -702,11 +710,11 @@ body {
 
   .modal {
     position: absolute;
-    top: 58%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 392px;
-    height: 586px;
+    max-width: 95%;
+    height: 95%;
     background-color: #fcfcfc;
     padding: 72px 16px 24px 16px;
   }
@@ -994,7 +1002,7 @@ body {
     flex-direction: column;
     gap: 12px;
     margin-left: 121px;
-    padding: 0;
+    padding: 16px 0 16px 0;
   }
   /* /HEADER TABLET */
 
@@ -1621,13 +1629,15 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-    margin-right: 76px;
+    margin: 0;
   }
 
   .container-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: unset;
     align-items: center;
+    justify-content: space-between;
+    margin: auto;
   }
 
   .navigation .link-nav {
@@ -1680,13 +1690,16 @@ body {
   .navigation.list {
     display: flex;
     gap: 40px;
+    margin-right: 250px;
   }
 
   .address.list {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    /* margin-left: 332px; */
+    margin: 0;
+    /* margin-left: 140px; */
+    /* justify-self: flex-end; */
   }
   /* /HEADER DESKTOP */
 
