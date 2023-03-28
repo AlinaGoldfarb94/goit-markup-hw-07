@@ -193,7 +193,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    /* margin-top: 56px; */
+    margin-top: 56px;
     padding: 0;
     text-decoration: none;
   }
@@ -968,7 +968,7 @@ body {
   .link-nav.current::after {
     content: "";
     position: absolute;
-    margin-bottom: -12px;
+    margin-bottom: -28px;
     width: 48px;
     height: 4px;
     background-color: var(--accent-text-and-button-color);
